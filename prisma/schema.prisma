@@ -11,7 +11,7 @@ datasource db {
 }
 
 model User {
-  id    String @unique @default(uuid())
+  id    String @unique @default(uuid()) // id is unique , default to uuid if not provided 
   email String @unique
   name  String
 
